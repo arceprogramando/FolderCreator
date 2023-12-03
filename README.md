@@ -1,21 +1,38 @@
 # Folder Creator
 
-Esta aplicación crea carpetas basadas en un array de nombres.
+## This application creates folders based on an array obtained from an https://random-data-api.com.
 
-## Descripción
+[![Portada Felipe Arce](https://github.com/arceprogramando/FolderCreator/blob/main/public/portada.gif)](https://github.com/arceprogramando)
 
-La aplicación utiliza el módulo `fs` de Node.js para crear carpetas en el sistema de archivos. Cada carpeta se crea utilizando el nombre de la persona del array, eliminando los acentos y reemplazando los espacios por guiones bajos. Luego, se agrega la fecha y hora actual como parte del nombre de la carpeta.
+### How to Follow Commit Structure in the Future
 
-## Instalación
+- 🌈 Change Styles: Use it for commits that mainly affect the appearance or design of the application.
+- ✨ New Features: Use it when adding a new feature or functionality to the application.
+- ⛔ Critical Changes: Use it when commits contain critical changes that may severely impact the application's functionality.
+- 🐛 Error Fix: For commits that address issues or errors in the existing code.
+- 🧼 Cleanup: Use this emoji when performing code cleanup tasks without functional changes.
+- 🚀 Refactor: Mark commits that improve the application's performance or make functional changes.
+- 🚧 Work in Progress: Use it to indicate that the commit contains work in progress that is not ready for implementation.
 
-1. Asegúrate de tener Node.js instalado en tu sistema.
-2. Clona este repositorio o descarga el archivo `app.js`.
 
-## Uso
+## Description
 
-1. Ejecuta el siguiente comando para iniciar la aplicación:
+The application utilizes the fs module from Node.js to create folders in the file system. Each folder is created using the name of the person from the array, removing accents and replacing spaces with underscores. Subsequently, the current date and time are added as part of the folder name.
 
-2. La aplicación creará una carpeta para cada nombre en el array `nombres`.
+## Installation
+
+1. Make sure you have Node.js installed on your system.
+2. Clone this repository.
+
+## Usage
+
+1. Run the following command to start the application:
+
+```bash
+npm run start
+
+```
+2. The application will create a folder for each name in the array received from the API, with a subfolder for the day and another for the time within the day.
 
 ## Dependencias
 
