@@ -1,19 +1,10 @@
-# Folder Creator
+# Folder creator consuming API
 
-## This application creates folders based on an array obtained from an https://random-data-api.com.
+## The API is obtained from: https://random-data-api.com.
 
-[![Portada Felipe Arce](https://github.com/arceprogramando/FolderCreator/blob/main/public/portada.gif)](https://github.com/arceprogramando)
+[![Cover: Felipe Arce](https://github.com/arceprogramando/FolderCreator/blob/main/public/portada.gif)](https://github.com/arceprogramando)
 
-### How to Follow Commit Structure in the Future
-
-- 🌈 Change Styles: Use it for commits that mainly affect the appearance or design of the application.
-- ✨ New Features: Use it when adding a new feature or functionality to the application.
-- ⛔ Critical Changes: Use it when commits contain critical changes that may severely impact the application's functionality.
-- 🐛 Error Fix: For commits that address issues or errors in the existing code.
-- 🧼 Cleanup: Use this emoji when performing code cleanup tasks without functional changes.
-- 🚀 Refactor: Mark commits that improve the application's performance or make functional changes.
-- 🚧 Work in Progress: Use it to indicate that the commit contains work in progress that is not ready for implementation.
-
+## I'm going to use https://www.conventionalcommits.org/en/v1.0.0/ for the structure of my commits.
 
 ## Description
 
@@ -23,13 +14,14 @@ The application utilizes the fs module from Node.js to create folders in the fil
 
 1. Make sure you have Node.js installed on your system.
 2. Clone this repository.
+3. you need node 22 to run this script 
 
 ## Usage
 
 1. Run the following command to start the application:
 
 ```bash
-npm run start
+node --run dev
 
 ```
 2. The application will create a folder for each name in the array received from the API, with a subfolder for the day and another for the time within the day.
