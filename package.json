@@ -1,19 +1,32 @@
 {
   "name": "creacion-de-carpetas",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "Script para la creación de carpetas en Node.js",
+  "main": "src/app.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node src/app.js"
+    "dev": "node src/app.js",
+    "prepare": "husky install",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
-  "keywords": [],
+  "keywords": [
+    "nodejs",
+    "carpetas",
+    "automatizacion"
+  ],
   "author": "Felipe Arce",
   "license": "ISC",
+  "imports": {
+    "#service/*": "./src/service/*.js",
+    "#dao/*": "./src/dao/*.js",
+    "#utils/*": "./src/utils/*.js"
+  },
   "devDependencies": {
     "eslint": "^8.44.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5"
+    "eslint-plugin-import": "^2.27.5",
+    "husky": "^9.1.7"
   }
 }
