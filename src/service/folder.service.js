@@ -15,15 +15,18 @@ const createFolderWithComment = async (name) => {
     const fantasyHistory = createFantasyHistory(cleanedName, year, hour);
     await fs.mkdir(folderPath, { recursive: true });
 
-    await fs.writeFile(`./users/${folderName}/${cleanedName}.txt`, fantasyHistory, (err) => {
-      if (err) throw err;
-      console.log('Saved!');
-    });
+    await fs.writeFile(
+      `./users/${folderName}/${cleanedName}.txt`,
+      fantasyHistory,
+      (err) => {
+        if (err) throw err;
+      },
+    );
 
     const comment = `Folder ${folderPath} created successfully. Date and time: ${new Date().toLocaleString()}`;
-    console.log(comment);
+    return comment;
   } catch (error) {
-    console.error(`Error creating folder: ${error.message}`);
+    return error;
   }
 };
 

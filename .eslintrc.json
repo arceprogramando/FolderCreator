@@ -1,5 +1,4 @@
 {
-
   "extends": ["airbnb-base"],
   "env": {
     "browser": true,
@@ -11,10 +10,10 @@
       "error",
       { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
     ],
-    "no-console": "warn"
+    "no-console": "warn",
+    "import/extensions": "off"
   },
   "parserOptions": {
     "sourceType": "module"
   }
 }
-
